@@ -1,0 +1,144 @@
+/* ===== GREEN THEME ===== */
+:root {
+  --primary-green: #2E8B57;       /* Base green */
+  --dark-green: #1F6F4E;          /* Darker shade for hover */
+  --light-green: #E8F5E9;         /* Light background for inputs */
+  --border-green: #A5D6A7;        /* Soft green border */
+}
+
+/* ===== GENERAL STYLES ===== */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== CENTER ALIGNMENT ===== */
+center {
+  display: block;
+  text-align: center;
+}
+
+/* ===== HEADING STYLE ===== */
+h3 {
+  color: var(--primary-green);
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* ===== INPUT FIELD STYLES ===== */
+label {
+  display: block;
+  margin: 15px 0 8px;
+  font-weight: bold;
+  color: var(--primary-green);
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 12px 15px;
+  width: 300px;
+  border: 2px solid var(--border-green);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: var(--light-green);
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+/* Input focus effect */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: var(--primary-green);
+  box-shadow: 0 0 8px rgba(46, 139, 87, 0.3);
+  outline: none;
+  background-color: white;
+}
+
+/* ===== BUTTON STYLES ===== */
+button {
+  background: linear-gradient(to bottom, var(--primary-green), #3CB371);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 25px auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Button hover effect */
+button:hover {
+  background: linear-gradient(to bottom, var(--dark-green), #2E8B57);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ===== FOOTER TEXT ===== */
+p {
+  text-align: center;
+  color: #555;
+  max-width: 500px;
+  margin: 30px auto;
+  line-height: 1.5;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  input[type="email"],
+  input[type="password"] {
+    width: 85%;
+  }
+  
+  button {
+    width: 85%;
+    padding: 14px;
+  }
+  .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="Phone number"],
+input[type="Password"] {
+    padding: 8px;
+    margin: 5px 0;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+}
